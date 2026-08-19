@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interview Setup</title>
+    <link rel="stylesheet" href="setup.css" />
+  </head>
+  <script>
+    function showOtherCompany() {
+      const company = document.getElementById("company");
+      const otherCompany = document.getElementById("otherCompany");
+
+      if (company.value === "Other") {
+        otherCompany.style.display = "block";
+      } else {
+        otherCompany.style.display = "none";
+      }
+    }
+  </script>
+  <body>
+    <div class="container">
+      <h1>Let's Prepare for Your Interview</h1>
+      <p class="subtitle">
+        Complete the details below to generate a personalized interview
+        experience.
+      </p>
+
+      <form>
+        <div class="form-group">
+          <label>Upload Resume (PDF)</label>
+          <input type="file" />
+        </div>
+
+        <div class="form-group">
+          <label>Job Role</label>
+          <select>
+            <option>Frontend Developer</option>
+            <option>Backend Developer</option>
+            <option>Full Stack Developer</option>
+            <option>React Developer</option>
+            <option>Java Developer</option>
+            <option>Python Developer</option>
+            <option>Data Analyst</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Target Company</label>
+
+          <select id="company" onchange="showOtherCompany()">
+            <option value="">Select Company</option>
+            <option value="Google">Google</option>
+            <option value="Microsoft">Microsoft</option>
+            <option value="Amazon">Amazon</option>
+            <option value="TCS">TCS</option>
+            <option value="Infosys">Infosys</option>
+            <option value="Wipro">Wipro</option>
+            <option value="Accenture">Accenture</option>
+            <option value="Cognizant">Cognizant</option>
+            <option value="Capgemini">Capgemini</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <input
+            type="text"
+            id="otherCompany"
+            placeholder="Enter company name"
+            style="display: none; margin-top: 10px"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Experience Level</label>
+
+          <div class="radio-group">
+            <label><input type="radio" name="exp" /> Fresher</label>
+            <label><input type="radio" name="exp" /> 1-2 Years</label>
+            <label><input type="radio" name="exp" /> 3-5 Years</label>
+            <label><input type="radio" name="exp" /> 5+ Years</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Interview Type</label>
+
+          <div class="checkbox-group">
+            <label><input type="checkbox" /> HR Interview</label>
+            <label><input type="checkbox" /> Technical Interview</label>
+            <label><input type="checkbox" /> Behavioral Interview</label>
+            <label><input type="checkbox" /> Aptitude Round</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Difficulty Level</label>
+
+          <select>
+            <option>Easy</option>
+            <option>Medium</option>
+            <option>Hard</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Number of Questions</label>
+
+          <select>
+            <option>5 Questions</option>
+            <option>10 Questions</option>
+            <option>15 Questions</option>
+            <option>20 Questions</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Interview Mode</label>
+
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="mode" value="text" checked />
+              Text Based
+            </label>
+
+            <label>
+              <input type="radio" name="mode" value="voice" />
+              Voice Based
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>AI Voice Feedback</label>
+
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="feedback" value="on" checked />
+              Enabled
+            </label>
+
+            <label>
+              <input type="radio" name="feedback" value="off" />
+              Disabled
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Skills</label>
+
+          <input
+            type="text"
+            placeholder="React, Node.js, MongoDB, JavaScript"
+          />
+        </div>
+
+        <div class="form-group">
+  <label>Job Description (Optional)</label>
+
+  <textarea
+    rows="5"
+    placeholder="Paste the job description here..."
+  ></textarea>
+</div>
+
+<button
+  type="button"
+  class="start-btn"
+  onclick="window.location.href='interview.html'">
+  Start Mock Interview
+</button>
+        
+      </form>
+    </div>
+  </body>
+</html>
