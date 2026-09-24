@@ -1,2 +1,2 @@
 # Sprint1
-METALENS - Digital Image Forecsics & Evidence Verification
+METALENS - Digital Image Forensics & Evidence Verification
