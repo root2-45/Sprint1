@@ -1,2 +1,2 @@
 # Sprint1
-Ai Mock Interview Platform Frontend 
+METALENS - Digital Image Forecsics & Evidence Verification
